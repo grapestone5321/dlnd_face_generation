@@ -1,4 +1,4 @@
-# face_generation
+# Face generation
 In this project, you'll use generative adversarial networks to generate new images of faces.
 
 ### Get the Data
@@ -12,7 +12,7 @@ Since the celebA dataset is complex and you're doing GANs in a project for the f
 
 If you're using FloydHub, set data_dir to "/input" and use the FloydHub data ID "R5KrjnANiKVhLWAkpXhNBe".
 
-# Explore the Data
+## Explore the Data
 
 ### MNIST
 
