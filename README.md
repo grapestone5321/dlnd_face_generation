@@ -19,7 +19,8 @@ If you're using FloydHub, set data_dir to "/input" and use the FloydHub data ID 
 As you're aware, the MNIST dataset contains images of handwritten digits. You can view the first number of examples by changing show_n_images.
 
 ### CelebA
-
+Optimization
+Implement model_opt to create the optimization operations for the GANs. Use tf.trainable_variables to get all the trainable variables. Filter the variables with names that are in the discriminator and generator scope names. The function should return a tuple of (discriminator training operation, generator training operation).
 The CelebFaces Attributes Dataset (CelebA) dataset contains over 200,000 celebrity images with annotations. Since you're going to be generating faces, you won't need the annotations. You can view the first number of examples by changing show_n_images.
 
 ## Preprocess the Data
@@ -67,4 +68,14 @@ Implement model_loss to build the GANs for training and calculate the loss. The 
 
 - discriminator(images, reuse=False)
 - generator(z, out_channel_dim, is_train=True)
+
+### Optimization
+
+Implement model_opt to create the optimization operations for the GANs. Use tf.trainable_variables to get all the trainable variables. Filter the variables with names that are in the discriminator and generator scope names. The function should return a tuple of (discriminator training operation, generator training operation).
+
+## Neural Network Training
+
+### Show Output
+
+Use this function to show the current output of the generator during training. It will help you determine how well the GANs is training.
 
