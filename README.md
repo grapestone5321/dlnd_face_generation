@@ -17,3 +17,7 @@ If you're using FloydHub, set data_dir to "/input" and use the FloydHub data ID 
 ### MNIST
 
 As you're aware, the MNIST dataset contains images of handwritten digits. You can view the first number of examples by changing show_n_images.
+
+### CelebA
+
+The CelebFaces Attributes Dataset (CelebA) dataset contains over 200,000 celebrity images with annotations. Since you're going to be generating faces, you won't need the annotations. You can view the first number of examples by changing show_n_images.
