@@ -1,4 +1,4 @@
-# Face generation
+## Face generation
 In this project, you'll use generative adversarial networks to generate new images of faces.
 
 ### Get the Data
@@ -41,3 +41,15 @@ You'll build the components necessary to build a GANs by implementing the follow
 ### Check the Version of TensorFlow and Access to GPU
 
 This will check to make sure you have the correct version of TensorFlow and access to a GPU
+
+### Input
+Implement the model_inputs function to create TF Placeholders for the Neural Network. It should create the following placeholders:
+
+
+- Real input images placeholder with rank 4 using image_width, image_height, and image_channels.
+- Z input placeholder with rank 2 using z_dim.
+- Learning rate placeholder with rank 0.
+
+
+Return the placeholders in the following the tuple (tensor of real input images, tensor of z data)
+
