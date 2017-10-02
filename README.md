@@ -79,3 +79,24 @@ Implement model_opt to create the optimization operations for the GANs. Use tf.t
 
 Use this function to show the current output of the generator during training. It will help you determine how well the GANs is training.
 
+### Train
+
+Implement train to build and train the GANs. Use the following functions you implemented:
+
+- model_inputs(image_width, image_height, image_channels, z_dim)
+- model_loss(input_real, input_z, out_channel_dim)
+- model_opt(d_loss, g_loss, learning_rate, beta1)
+
+Use the show_generator_output to show generator output while you train. Running show_generator_output for every batch will drastically increase training time and increase the size of the notebook. It's recommended to print the generator output every 100 batches.
+
+### MNIST
+
+Test your GANs architecture on MNIST. After 2 epochs, the GANs should be able to generate images that look like handwritten digits. Make sure the loss of the generator is lower than the loss of the discriminator or close to 0.
+
+### CelebA
+
+Run your GANs on CelebA. It will take around 20 minutes on the average GPU to run one epoch. You can run the whole epoch or stop when it starts to generate realistic faces.
+
+### Submitting This Project
+
+When submitting this project, make sure to run all the cells before saving the notebook. Save the notebook file as "dlnd_face_generation.ipynb" and save it as a HTML file under "File" -> "Download as". Include the "helper.py" and "problem_unittests.py" files in your submission.
