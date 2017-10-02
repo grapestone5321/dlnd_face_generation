@@ -53,3 +53,18 @@ Implement the model_inputs function to create TF Placeholders for the Neural Net
 
 Return the placeholders in the following the tuple (tensor of real input images, tensor of z data)
 
+### Discriminator
+
+Implement discriminator to create a discriminator neural network that discriminates on images. This function should be able to reuse the variables in the neural network. Use tf.variable_scope with a scope name of "discriminator" to allow the variables to be reused. The function should return a tuple of (tensor output of the discriminator, tensor logits of the discriminator).
+
+### Generator
+
+Implement generator to generate an image using z. This function should be able to reuse the variables in the neural network. Use tf.variable_scope with a scope name of "generator" to allow the variables to be reused. The function should return the generated 28 x 28 x out_channel_dim images.
+
+### Loss
+
+Implement model_loss to build the GANs for training and calculate the loss. The function should return a tuple of (discriminator loss, generator loss). Use the following functions you implemented:
+
+- discriminator(images, reuse=False)
+- generator(z, out_channel_dim, is_train=True)
+
